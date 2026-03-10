@@ -1,1 +1,4 @@
+# REQUIREMENTS: 
 
+# PYSERIAL library for real router console access 
+# GNS3 software for testing script 
