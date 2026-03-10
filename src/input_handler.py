@@ -17,8 +17,11 @@ def ask_non_empty(questions: str) -> str :
 def ask_choices(questions : str , choices : list[str]) -> str :
     while True:
         print(questions)
-        for i , opt in enumerate(choices, 1):
-            print(f"{i}) {choices}")
+        
+        for i , a in enumerate(choices):
+            i = 1
+            print(f"{i}: {a}")
+            
         ans = input("Enter choice:").strip().lower()
         if ans in choices:
             return ans 
