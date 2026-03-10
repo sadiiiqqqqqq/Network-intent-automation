@@ -1,6 +1,6 @@
 import socket 
 import time 
-import serial 
+# import serial 
 def apply_gns3(commands, port):
 
     sock = socket.socket(socket.AF_INET,socket.SOCK_STREAM) 

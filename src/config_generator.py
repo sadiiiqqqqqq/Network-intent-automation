@@ -43,15 +43,14 @@ def generate_config(cfg: dict)-> list:
     lines.append(f"hostname {cfg["hostname"]}")
     for iface in cfg["interface"]:
         if iface["dhcp"] :
-            d = iface["dhcp"]
-            lines.append(f"interface {d["name"]}")
+            lines.append(f"interface {iface["name"]}")
             lines.append("ip address dhcp ")
             lines.append("no shutdown")
             lines.append("exit")
         else :
-            lines.append(f"interface {d["name"]}")
-            lines.append(f"ip address {d["ip"]} {d["mask"]}")
-            lines.append(f"no shutdown ")
+            lines.append(f"interface {iface["name"]}")
+            lines.append(f"ip address {iface["ip"]} {iface["mask"]}")
+            lines.append("no shutdown ")
             lines.append("exit")
     for issh in cfg["connections"]:
         s = issh
