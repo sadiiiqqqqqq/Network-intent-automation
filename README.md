@@ -1,9 +1,19 @@
-<Head> 
-Network-intent-automation
+# Network Intent Automation Tool
 <br>
-<p>
-This is Network Automation tool that is made for admin to automate instead of manual commands typing on router
+Python-based network automation tool that converts
+user intent into router configurations and applies
+them automatically.
 <br>
-IT IS PRIORLY MADE FOR EFFICIENCY AND ERROR FREE AUTOMATIONS 
-<br>
-One of the most important problem it solves that it is a out of band connection tool 
+# FEATURES  
+• Generate router configuration from user intent <br>
+• Supports routing protocols <br>
+• Automated CLI command generation <br>
+• Works with GNS3 and physical routers <br>
+
+# INSTALLATION:<br>
+git clone https://github.com/username/network-intent-automation
+cd network-intent-automation <br>
+pip install -r requirements.txt
+
+ # USAGE: <br>
+python src/main.py
