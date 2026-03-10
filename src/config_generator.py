@@ -14,10 +14,15 @@ def collect_user_input():
             iface["mask"]=imp.ask_non_empty("Enter Subnet mask:")
         config["interface"].append[iface]
     config["ssh"] = []
-    while imp.ask_yes_or_no("Do you want to configure SSh"):
+    choices = imp.ask_choices("Do you want to configure SSh", choice=["ssh","telnet"]):
         issh = {}
+    if choices == "ssh":
         issh["local"]= imp.ask_non_empty("Enter Local username :")
         issh["localpass"] = imp.ask_non_empty("Enter local username password")
         issh["domain"] = imp.ask_non_empty("Enter ")
-    
+        
+    else:
+        issh["telnetpass"] = imp.ask_non_empty("Enter telnet password : ")
+    config["ssh"].append[issh]
+
       
