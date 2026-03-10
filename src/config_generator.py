@@ -24,5 +24,5 @@ def collect_user_input():
     else:
         issh["telnetpass"] = imp.ask_non_empty("Enter telnet password : ")
     config["ssh"].append[issh]
-
+return config
       
