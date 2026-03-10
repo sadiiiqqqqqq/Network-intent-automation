@@ -1,13 +1,6 @@
 {
-"enable"
-"Conf t" 
-"hostname R1"
-"interface g0/0"
-"ip address 192.168.10.1 255.255.255.0"
-"no shutdown" 
-"exit"
-"line vty 0 3" 
-"password 123"
-"transport input telnet"
-"exit"
+  "hostname": "R1",
+  "interface": "GigabitEthernet0/0",
+  "ip": "192.168.1.1",
+  "mask": "255.255.255.0"
 }
