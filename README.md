@@ -4,7 +4,7 @@ Python-based network automation tool that converts
 user intent into router configurations and applies
 them automatically.
 <br>
-# FEATURES  
+------------------- FEATURES ----------------------<br>  
 • Generate router configuration from user intent <br>
 • Supports routing protocols <br>
 • Automated CLI command generation <br>
