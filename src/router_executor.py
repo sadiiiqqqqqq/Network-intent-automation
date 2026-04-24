@@ -14,5 +14,7 @@ def apply_gns3(commands, port):
         time.sleep(0.4) 
 
     socket.close()
+def apply_router(commands, port):
+    print("----ROUTER CONFIG ----")
 
 
