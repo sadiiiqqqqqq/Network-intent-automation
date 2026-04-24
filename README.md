@@ -11,7 +11,7 @@ them automatically.
 • Works with GNS3 and physical routers <br>
 
 # INSTALLATION:<br>
-git clone https://github.com/username/network-intent-automation
+git clone https://github.com/sadiiiqqqqqq/network-intent-automation
 cd network-intent-automation <br>
 pip install -r requirements.txt
 
